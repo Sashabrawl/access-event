@@ -15,7 +15,7 @@
 ### Слой данных
 - СУБД: PostgreSQL 15
 - Таблицы: users, events, registrations, messages, event_categories,
-  event_category_link, notifications
+event_category_link, notifications
 
 ## 2. Клиент-серверное взаимодействие
 - GET /events — список мероприятий
@@ -27,4 +27,3 @@
 - GitHub Actions — автоматизированная проверка (CI/CD)
 - Docker — контейнеризация
 - GHCR — реестр Docker-образов
-
