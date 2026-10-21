@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang='ru'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Создать мероприятие</title>
+    <link rel='stylesheet' href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>AccessEvent</h1>
+        <p>Создание нового мероприятия</p>
+    </header>
+
+    <main class='form-container'>
+        <form method='POST' class='event-form'>
+            <label>азвание:</label>
+            <input type='text' name='title' required placeholder='апример: екция по сурдопереводу'>
+
+            <label>ата и время:</label>
+            <input type='text' name='date' required placeholder='апример: 25 ктября, 18:00'>
+
+            <label>писание:</label>
+            <textarea name='description' rows='4' required placeholder='пишите мероприятие...'></textarea>
+
+            <button type='submit' class='btn-register'>публиковать</button>
+            <a href="{{ url_for('index') }}" class='btn-back'>тмена</a>
+        </form>
+    </main>
+</body>
+</html>
